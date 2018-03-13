@@ -17,8 +17,6 @@
 #import "NKConstants.h"
 #import "NSString+NepaliNumber.h"
 #import "TFHpple.h"
-#import "Tutorial.h"
-#import "Contributor.h"
 #import "HTMLParser.h"
 #import "NKHTMLParser.h"
 #import <SDSegmentedControl/SDSegmentedControl.h>

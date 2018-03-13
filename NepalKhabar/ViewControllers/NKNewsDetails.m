@@ -436,7 +436,7 @@ NSString *shadowColor;
     return html;
 }
 
-- (void)tabView:(ViewBottomBar *)tabBtmView didSelectOption:(NSInteger)btnTag{
+- (void)viewBottomBar:(ViewBottomBar *)tabBtmView didSelectOption:(NSInteger)btnTag{
     
     UIActionSheet *action;
     switch (btnTag) {

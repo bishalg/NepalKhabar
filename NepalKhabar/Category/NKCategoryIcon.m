@@ -2,7 +2,7 @@
 //  NKCategoryIcon.m
 //  Nepalkhabar
 //
-//  Created by Rowin on 10/07/13.
+//  Created by Bishal Ghimire on 10/07/13.
 //  Copyright (c) 2013 BrainDigit. All rights reserved.
 
 /* HOME */
@@ -110,56 +110,53 @@
 #import "NKCategoryIcon.h"
 
 @implementation NKCategoryIcon
- 
--(NSString *)iconForCategory:(NSString*)category{
-    // DLog(@"%@",category);
+
+- (NSString *)iconForCategory:(NSString *)category {
     NSString *iconName;
     
-    if (HOME1||HOME2||HOME3||HOME4||HOME5||HOME6) {
-        iconName=HOME;
+    if (HOME1 || HOME2 || HOME3 || HOME4 || HOME5 || HOME6) {
+        iconName = HOME;
     }
-    else if(COUNTRY1||COUNTRY2){
-        iconName=COUNTRY;
+    else if (COUNTRY1 || COUNTRY2) {
+        iconName = COUNTRY;
     }
-    else if(ECONOMY1||ECONOMY2||ECONOMY3||ECONOMY4||ECONOMY5||ECONOMY6||ECONOMY7||ECONOMY8){
-        iconName=ECONOMY;
+    else if (ECONOMY1 || ECONOMY2 || ECONOMY3 || ECONOMY4 || ECONOMY5 || ECONOMY6 || ECONOMY7 || ECONOMY8) {
+        iconName = ECONOMY;
     }
-    else if(POLITICS1||POLITICS2){
-        iconName=POLITICS;
+    else if (POLITICS1 || POLITICS2) {
+        iconName = POLITICS;
     }
-    else if(INFOTECH1||INFOTECH2||INFOTECH3){
-        iconName=INFOTECH;
+    else if (INFOTECH1 || INFOTECH2 || INFOTECH3) {
+        iconName = INFOTECH;
     }
-    else if(OPINION1||OPINION2||OPINION3||OPINION4||OPINION5||OPINION6||OPINION7||OPINION8||OPINION9||OPINION10){
-        iconName=OPINION;
+    else if (OPINION1 || OPINION2 || OPINION3 || OPINION4 || OPINION5 || OPINION6 || OPINION7 || OPINION8 || OPINION9||OPINION10) {
+        iconName = OPINION;
     }
-    else if (SPORTS1||SPORTS2||SPORTS3){
-        iconName=SPORTS;
+    else if (SPORTS1 || SPORTS2 || SPORTS3){
+        iconName = SPORTS;
     }
-    else if(WORLD1||WORLD2||WORLD3||WORLD4||WORLD5||WORLD6){
-        iconName=WORLD;
+    else if (WORLD1 || WORLD2 || WORLD3 || WORLD4 || WORLD5 || WORLD6){
+        iconName = WORLD;
     }
-    else if(ENTERTAINMENT1||ENTERTAINMENT2||ENTERTAINMENT3||ENTERTAINMENT4||ENTERTAINMENT5){
-        iconName=ENTERTAINMENT;
+    else if (ENTERTAINMENT1 || ENTERTAINMENT2 || ENTERTAINMENT3 || ENTERTAINMENT4 || ENTERTAINMENT5){
+        iconName = ENTERTAINMENT;
     }
-    else if(SOCIAL1||SOCIAL2||SOCIAL3){
-        iconName=SOCIAL;
+    else if (SOCIAL1 || SOCIAL2 || SOCIAL3){
+        iconName = SOCIAL;
     }
-    else if(LIFE1||LIFE2||LIFE3){
-        iconName=LIFE;
-        
+    else if (LIFE1 || LIFE2 || LIFE3){
+        iconName = LIFE;
     }
-    else if(INTERVIEW1||INTERVIEW2||INTERVIEW3||INTERVIEW4||INTERVIEW5){
-        iconName=INTERVIEW;
+    else if (INTERVIEW1 || INTERVIEW2 || INTERVIEW3 || INTERVIEW4 || INTERVIEW5){
+        iconName = INTERVIEW;
     }
-    else if(FEATURED1||FEATURED2){
-         iconName=FEATURED;
+    else if(FEATURED1 || FEATURED2){
+        iconName = FEATURED;
     }
-    else if(DOSSIER1||DOSSIER2){
-        iconName=DOSSIER;
+    else if(DOSSIER1 || DOSSIER2){
+        iconName = DOSSIER;
     }
-   return  iconName;
+    return  iconName;
 }
-
 
 @end

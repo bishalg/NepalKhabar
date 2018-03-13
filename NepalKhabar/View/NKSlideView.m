@@ -2,7 +2,7 @@
 //  NKSlideView.m
 //  Nepalkhabar
 //
-//  Created by Rowin on 8/07/13.
+//  Created by Bishal Ghimire on 8/07/13.
 //  Copyright (c) 2013 BrainDigit. All rights reserved.
 //
 
@@ -42,7 +42,7 @@
     [[UISlider appearance] setThumbImage:thumbImage
                                 forState:UIControlStateNormal];
     
-    UILabel *smallLabel         = [[UILabel alloc] initWithFrame:CGRectMake((mySlider.frame.origin.x)-15, 5, 20, 20)];
+    UILabel *smallLabel         = [[UILabel alloc] initWithFrame:CGRectMake((mySlider.frame.origin.x) - 15, 5, 20, 20)];
     smallLabel.textColor        = [UIColor whiteColor];
     [smallLabel setFont:[UIFont fontWithName:@"Arial-BoldMT" size:14]];
     smallLabel.text             = @"A";
@@ -50,7 +50,7 @@
     [upperView addSubview:smallLabel];
     
     
-    UILabel *largeLabel=[[UILabel alloc] initWithFrame:CGRectMake((mySlider.frame.origin.x)+(mySlider.frame.size.width)+5, 5, 20, 20)];
+    UILabel *largeLabel = [[UILabel alloc] initWithFrame:CGRectMake((mySlider.frame.origin.x)+(mySlider.frame.size.width)+5, 5, 20, 20)];
     largeLabel.textColor        = [UIColor whiteColor];
     [largeLabel setFont:[UIFont fontWithName:@"Arial-BoldMT" size:20]];
     largeLabel.text             = @"A";
@@ -59,15 +59,15 @@
     [upperView addSubview:mySlider];
     [self addSubview:upperView];
     
-    UIImageView *imageView      = [[UIImageView alloc] initWithFrame: CGRectMake( (upperView.frame.size.width)/2, upperView.frame.size.height, 17,12 )];
+    UIImageView *imageView      = [[UIImageView alloc] initWithFrame: CGRectMake( (upperView.frame.size.width) / 2, upperView.frame.size.height, 17, 12)];
     [imageView setBackgroundColor:[UIColor clearColor]];
     [imageView setImage:[UIImage imageNamed:@"font_adjust_triangle.png"]];
     [self addSubview:imageView];
     
 }
 - (void)updateValue:(id)slider {
-    NSInteger v = mySlider.value;
-    [self.delegate slideView:self didSelectOption:v];
+    NSInteger value = mySlider.value;
+    [self.delegate slideView:self didSelectOption:value];
 }
  
 @end

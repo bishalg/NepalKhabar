@@ -2,7 +2,7 @@
 //  NKSlideView.h
 //  Nepalkhabar
 //
-//  Created by Rowin on 8/07/13.
+//  Created by Bishal Ghimire on 8/07/13.
 //  Copyright (c) 2013 BrainDigit. All rights reserved.
 //
 
@@ -10,11 +10,12 @@
 @class NKSlideView;
 
 @protocol SlideViewDelegate
--(void)slideView:(NKSlideView *)slideView didSelectOption:(NSInteger)slideValue;
+- (void)slideView:(NKSlideView *)slideView didSelectOption:(NSInteger)slideValue;
 @end
-@interface NKSlideView : UIView
-@property (nonatomic, strong) UISlider *mySlider;
 
+@interface NKSlideView : UIView
+
+@property (nonatomic, strong) UISlider *mySlider;
 @property (assign) id <SlideViewDelegate> delegate;
 
 @end
