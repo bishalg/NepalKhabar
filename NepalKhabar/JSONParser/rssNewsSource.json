@@ -1,0 +1,565 @@
+{
+    "totalPages": 1,
+	"newspapers": [
+                  {
+                  "id": "01",
+                  "title":"ekantipur",
+                  "mainLink":"http://ekantipur.com/en/rss/",
+                  "language":"english",
+                  "imageName":"theKathmanduPost.png",
+                  "labelName":"THE KATHMANDU POST",
+                  "category":[
+                              {
+                              "title":"home",
+                              "links":"http://ekantipur.com/en/rss/"
+                              },
+                              {
+                              "title":"topStories",
+                              "links":"http://www.ekantipur.com/en/rss/1"
+                              },
+                              {
+                              "title":"national",
+                              "links":"http://www.ekantipur.com/en/rss/a/1"
+                              },
+                              {
+                              "title":"business",
+                              "links":"http://www.ekantipur.com/en/rss/a/3"
+                              },
+                              {
+                              "title":"sports",
+                              "links": "http://www.ekantipur.com/en/rss/a/4"
+                              },
+                              {
+                              "title":"world",
+                              "links": "http://www.ekantipur.com/en/rss/world/5"
+                              },
+                              {
+                              "title":"entertainment",
+                              "links": "http://www.ekantipur.com/en/rss/a/6"
+                              },
+                              {
+                              "title":"editorPicks",
+                              "links":"http://www.ekantipur.com/en/rss/editors-pick/10"
+                              }]
+                  },
+                  {
+                  "id": "02",
+                  "title":"BBC",
+                  "mainLink":"http://feeds.bbci.co.uk/news/rss.xml",
+                  "language":"english",
+                  "imageName":"BBC_eng.png",
+                  "labelName":"BBC",
+                  "category":[
+                              {
+                              "title":"home",
+                              "links":"http://feeds.bbci.co.uk/news/rss.xml"				},
+                              {
+                              "title":"world",
+                              "links":"http://feeds.bbci.co.uk/news/world/rss.xml"				},
+                              {
+                              "title":"business",
+                              "links":"http://feeds.bbci.co.uk/news/business/rss.xml"				},
+                              {
+                              "title":"politics",
+                              "links":"http://feeds.bbci.co.uk/news/politics/rss.xml"				},
+                              {
+                              "title":"health",
+                              "links":"http://feeds.bbci.co.uk/news/health/rss.xml"				},
+                              {
+                              "title":"technology",
+                              "links": "http://feeds.bbci.co.uk/news/technology/rss.xml"				},
+                              {
+                              "title":"sports",
+                              "links":"http://feeds.bbci.co.uk/sport/rss.xml"				}]
+                  },
+                  {
+                  "id": "03",
+                  "title":"myrepublica",
+                  "mainLink":"http://www.myrepublica.com/portal/rss.php",
+                  "language":"english",
+                  "imageName":"myrepublica.png",
+                  "labelName":"REPUBLICA",
+                  "category":[
+                              {
+                              "title":"home",
+                              "links":"http://www.myrepublica.com/portal/rss.php"				},
+                              {
+                              "title":"politicalAffairs",
+                              "links":"http://www.myrepublica.com/portal/news_rss.php?news_category_id=14"				},
+                              {
+                              "title":"businessAndEconomy",
+                              "links":"http://www.myrepublica.com/portal/news_rss.php?news_category_id=15"				},
+                              {
+                              "title":"socialAffairs",
+                              "links":"http://www.myrepublica.com/portal/news_rss.php?news_category_id=16"				},
+                              {
+                              "title":"lifeStyle",
+                              "links":"http://www.myrepublica.com/portal/news_rss.php?news_category_id=17"				},
+                              {
+                              "title":"sports",
+                              "links":"http://www.myrepublica.com/portal/news_rss.php?news_category_id=18"				},
+                              {
+                              "title":"opinion",
+                              "links":"http://www.myrepublica.com/portal/news_rss.php?news_category_id=19"				},
+                              {
+                              "title":"interview",
+                              "links":"http://www.myrepublica.com/portal/news_rss.php?news_category_id=23"				},
+                              {
+                              "title":"international",
+                              "links":"http://www.myrepublica.com/portal/news_rss.php?news_category_id=21"				}]
+                  },
+                  {
+                  
+                  "id": "04",
+                  "title":"nepaliTimes",
+                  "mainLink":"http://www.nepalitimes.com/blogs/thebrief/feed/",
+                  "language":"english",
+                  "imageName":"nepaliTimes.png",
+                  "labelName":"NEPALI TIMES",
+                  "category":[
+                              {
+                              "title":"home",
+                              "links":"http://www.nepalitimes.com/blogs/thebrief/feed/"				}]
+                  },
+                  
+                  {
+                  "id": "05",
+                  "title":"himalayanTimes",
+                  "mainLink": "http://thehimalayantimes.com/rssFeed.php?catid=Mjk=",
+                  "language":"english",
+                  "imageName":"theHimalayan.png",
+                  "labelName":"THE HIMALAYAN",
+                  "category":[
+                              {
+                              "title":"home",
+                              "links":"http://thehimalayantimes.com/rssFeed.php?catid=Mjk="				},
+                              {
+                              "title":"capital",
+                              "links":"http://thehimalayantimes.com/rssFeed.php?catid=Nw=="				},
+                              {
+                              "title":"nepal",
+                              "links": "http://thehimalayantimes.com/rssFeed.php?catid=NQ=="				},
+                              {
+                              "title":"world",
+                              "links": "http://thehimalayantimes.com/rssFeed.php?catid=Mg=="				},
+                              {
+                              "title":"sports",
+                              "links": "http://thehimalayantimes.com/rssFeed.php?catid=Mw=="				},
+                              {
+                              "title":"business",
+                              "links": "http://thehimalayantimes.com/rssFeed.php?catid=MQ=="				},
+                              {
+                              "title":"variety",
+                              "links": "http://thehimalayantimes.com/rssFeed.php?catid=Mjg="				},
+                              {
+                              "title":"opinion",
+                              "links": "http://thehimalayantimes.com/rssFeed.php?catid=NA=="				},
+                              {
+                              "title":"entertainment",
+                              "links": "http://thehimalayantimes.com/rssFeed.php?catid=MTI="				}]
+                  },
+                  {
+                  "id": "06",
+                  "title":"telegraphNepal",
+                  "mainLink": "http://www.telegraphnepal.com/rssFeed-2",
+                  "language":"english",
+                  "imageName":"telegraphNepal.png",
+                  "labelName":"TELEGRAPH",
+                  "category":[
+                              {
+                              "title":"national",
+                              "links": "http://www.telegraphnepal.com/rssFeed-2"				},
+                              {
+                              "title":"views",
+                              "links": "http://www.telegraphnepal.com/rssFeed-5"				},
+                              {
+                              "title":"editorials",
+                              "links": "http://www.telegraphnepal.com/rssFeed-4"				},
+                              {
+                              "title":"international",
+                              "links":"http://www.telegraphnepal.com/rssFeed-6"				},
+                              {
+                              "title":"featured",
+                              "links": "http://www.telegraphnepal.com/rssFeed-23"				},
+                              {
+                              "title":"corruption",
+                              "links":"http://www.telegraphnepal.com/rssFeed-10"				},
+                              {
+                              "title":"dossier",
+                              "links": "http://www.telegraphnepal.com/rssFeed-15"				},
+                              {
+                              "title":"opinion",
+                              "links":"http://www.telegraphnepal.com/rssFeed-8"				},
+                              {
+                              "title":"analysis",
+                              "links": "http://www.telegraphnepal.com/rssFeed-14"				}]
+                  },
+                  {
+                  "id": "07",
+                  "title":"ehamrakura",
+                  "mainLink": "http://ehamrakura.com/home/feed",
+                  "language":"english",
+                  "imageName":"hamraKura_eng.png",
+                  "labelName":"HAMRA KURA",
+                  "category":[
+                              {
+                              "title":"home",
+                              "links": "http://ehamrakura.com/home/feed"				},
+                              {
+                              "title":"currentAffairs",
+                              "links": "http://ehamrakura.com/category/current-affairs/feed"				},
+                              {
+                              "title":"opinion",
+                              "links": "http://ehamrakura.com/category/opinion/feed"				},
+                              {
+                              "title":"international",
+                              "links":"http://ehamrakura.com/category/international/feed"				},
+                              {
+                              "title":"sports",
+                              "links": "http://ehamrakura.com/category/sports/feed"				},
+                              {
+                              "title":"economyTourism",
+                              "links":"http://ehamrakura.com/category/economy-tourism/feed"				},
+                              {
+                              "title":"entertainment",
+                              "links": "http://ehamrakura.com/category/entertainment/feed"
+                              }]
+                  },
+                  {
+                  
+                  "id": "08",
+                  "title":"onlineKhabar",
+                  "mainLink":"http://www.onlinekhabar.com/category/english/news-headlines/feed",
+                  "language":"english",
+                  "imageName":"onlineKhabar_eng.png",
+                  "labelName":"ONLINE KHABAR",
+                  "category":[
+                              {
+                              "title":"home",
+                              "links":"http://www.onlinekhabar.com/category/english/news-headlines/feed"				}]
+                  },
+                  {
+                  "id": "09",
+                  "title":"karobar",
+                  "mainLink": "http://en.karobardaily.com/blog/rss/all.rss",
+                  "language":"english",
+                  "imageName":"karobar_eng.png",
+                  "labelName":"KAROBAR",
+                  "category":[
+                              {
+                              "title":"home",
+                              "links": "http://en.karobardaily.com/blog/rss/all.rss"				},
+                              {
+                              "title":"country",
+                              "links": "http://en.karobardaily.com/blog/rss/country.rss"				},
+                              {
+                              "title":"economy",
+                              "links": "http://en.karobardaily.com/blog/rss/economy.rss"				},
+                              {
+                              "title":"bank",
+                              "links":"http://en.karobardaily.com/blog/rss/bank.rss"				},
+                              {
+                              "title":"politicsSociety",
+                              "links": "http://en.karobardaily.com/blog/rss/politics-society.rss"				},
+                              {
+                              "title":"infoTech",
+                              "links":"http://en.karobardaily.com/blog/rss/info-tech.rss"				},
+                              {
+                              "title":"opinion",
+                              "links": "http://en.karobardaily.com/blog/rss/Opinion.rss"
+                              }]
+                  },
+                  {
+                  "id": "10",
+                  "title":"ekantipur",
+                  "mainLink":"http://ekantipur.com/nep/rss/",
+                  "language":"nepali",
+                  "imageName":"kantipur.png",
+                  "labelName":"KANTIPUR",
+                  "category":[
+                              {
+                              "title":"मुख्य समाचार",
+                              "links":"http://ekantipur.com/nep/rss/"						},
+                              {
+                              "title":"अर्थ",
+                              "links":"http://www.ekantipur.com/nep/rss/2/"				},
+                              {
+                              "title":"खेलकुद",
+                              "links":"http://www.ekantipur.com/nep/rss/3/"				},
+                              {
+                              "title":"मनोरंजन",
+                              "links":"http://www.ekantipur.com/nep/rss/4/"				},
+                              {
+                              "title":"बिचार",
+                              "links": "http://www.ekantipur.com/nep/rss/5/"				},
+                              {
+                              "title":"कुराकानी",
+                              "links": "http://www.ekantipur.com/nep/rss/6/"				},
+                              {
+                              "title":"समाचार",
+                              "links": "http://www.ekantipur.com/nep/rss/10/"				},
+                              {
+                              "title":"सम्पादकीय",
+                              "links":"http://www.ekantipur.com/nep/rss/12/"
+                              },
+                              {
+                              "title":"चौतारी",
+                              "links": "http://www.ekantipur.com/nep/rss/18/"				},
+                              {
+                              "title":"सूचना प्रविधि",
+                              "links":"http://www.ekantipur.com/nep/rss/20/"				},
+                              {
+                              "title":"स्वास्थ्य",
+                              "links": "http://www.ekantipur.com/nep/rss/21/"				},
+                              {
+                              "title":"विश्व",
+                              "links":" http://www.ekantipur.com/nep/rss/27/"				}]
+                  },
+                  {
+                  
+                  "id": "11",
+                  "title":"BBC",
+                  "mainLink":"http://www.bbc.co.uk/nepali/index.xml",
+                  "language":"nepali",
+                  "imageName":"BBC_nep.png",
+                  "labelName":"BBC",
+                  "category":[
+                              {
+                              "title":"home",
+                              "links":"http://www.bbc.co.uk/nepali/index.xml"				}]
+                  },
+                  
+                  {
+                  "id": "12",
+                  "title":"nagariknews",
+                  "mainLink":"http://www.nagariknews.com/index.php?format=feed&type=rss",
+                  "language":"nepali",
+                  "imageName":"nagariknuews.png",
+                  "labelName":"NAGARIKNEWS",
+                  "category":[
+                              {
+                              "title":"मुख्य समाचार",
+                              "links":"http://www.nagariknews.com/index.php?format=feed&type=rss"				},
+                              {
+                              "title":"राजनीति",
+                              "links":"http://www.nagariknews.com/politics.feed?type=rss"				},
+                              {
+                              "title":"अर्थ",
+                              "links":"http://www.nagariknews.com/economy.feed?type=rss"				},
+                              {
+                              "title":"समाज",
+                              "links":"http://www.nagariknews.com/society.feed?type=rss"				},
+                              {
+                              "title":"मनोरंजन",
+                              "links":"http://www.nagariknews.com/ent.feed?type=rss"				},
+                              {
+                              "title":"खेलकुद",
+                              "links": "http://www.nagariknews.com/sports.feed?type=rss"				},
+                              {
+                              "title":"विश्व",
+                              "links": "http://www.nagariknews.com/world.feed?type=rss"				},
+                              {
+                              "title":"प्रवास",
+                              "links":"http://www.nagariknews.com/diaspora.feed?type=rss"
+                              },
+                              {
+                              "title":"बिचार",
+                              "links": "http://www.nagariknews.com/opinion.feed?type=rss"				},
+                              {
+                              "title":"अन्तर्वार्ता",
+                              "links":"http://www.nagariknews.com/interview.feed?type=rss"				}]
+                  },
+                  {
+                  "id": "13",
+                  "title":"himalKhabar",
+                  "mainLink":"http://www.himalkhabar.com/?feed=rss2",
+                  "language":"nepali",
+                  "imageName":"himalKhabar.png",
+                  "labelName":"HIMAL KHABAR",
+                  "category":[
+                              {
+                              "title":"मुख्य समाचार",
+                              "links":"http://www.himalkhabar.com/?feed=rss2"				},
+                              {
+                              "title":"समाचार",
+                              "links":" http://www.himalkhabar.com/?feed=rss2&cat=1"				},
+                              {
+                              "title":"रिपोर्ट",
+                              "links":" http://www.himalkhabar.com/?feed=rss2&cat=306"				},
+                              {
+                              "title":"टिप्पणी",
+                              "links":"http://www.himalkhabar.com/?feed=rss2&cat=4"				},
+                              {
+                              "title":"अन्तर्वार्ता -विचार",
+                              "links":"http://www.himalkhabar.com/?feed=rss2&cat=5"				},
+                              {
+                              "title":"रमझम",
+                              "links": "http://www.himalkhabar.com/?feed=rss2&cat=9"				},
+                              {
+                              "title":"खेलकुद",
+                              "links":"http://www.himalkhabar.com/?feed=rss2&cat=316"				},
+                              {
+                              "title":"अर्थ",
+                              "links":"http://www.himalkhabar.com/?feed=rss2&cat=10"				},
+                              {
+                              "title":"व्यक्तित्व",
+                              "links":"http://www.himalkhabar.com/?feed=rss2&cat=312"				},
+                              {
+                              "title":"दस्तावेज",
+                              "links":"http://www.himalkhabar.com/?feed=rss2&cat=307"
+                              },
+                              {
+                              "title":"ब्लग",
+                              "links":"http://www.himalkhabar.com/?feed=rss2&cat=305"
+                              }]
+                  },
+                  {
+                  
+                  "id": "14",
+                  "title":"mysansar",
+                  "mainLink":"http://www.mysansar.com/feed/",
+                  "language":"nepali",
+                  "imageName":"mysansar.png",
+                  "labelName":"MYSANSAR",
+                  "category":[
+                              {
+                              "title":"मुख्य समाचार",
+                              "links":"http://www.mysansar.com/feed/"					}]
+                  },
+                  {
+                  
+                  "id": "15",
+                  "title":"imageChannel",
+                  "mainLink":"http://feeds.feedburner.com/ImageChannel?format=xml",
+                  "language":"nepali",
+                  "imageName":"imageChannel.png",
+                  "labelName":"IMAGE CHANNEL",
+                  "category":[
+                              {
+                              "title":"मुख्य समाचार",
+                              "links":"http://feeds.feedburner.com/ImageChannel?format=xml"					}]
+                  },
+                  {
+                  "id": "16",
+                  "title":"onlineKhabar",
+                  "mainLink":"http://www.onlinekhabar.com/feed",
+                  "language":"nepali",
+                  "imageName":"onlineKhabar_nep.png",
+                  "labelName":"ONLINE KHABAR",
+                  "category":[
+                              {
+                              "title":"मुख्य समाचार",
+                              "links":"http://www.onlinekhabar.com/feed"				},
+                              {
+                              "title":"समाचार",
+                              "links":" http://www.onlinekhabar.com/category/%E0%A4%B8%E0%A4%AE%E0%A4%BE%E0%A4%9A%E0%A4%BE%E0%A4%B0/feed"				},
+                              {
+                              "title":"विचार",
+                              "links":"http://www.onlinekhabar.com/category/opinion/feed"				},
+                              {
+                              "title":"विजनेश",
+                              "links":"http://www.onlinekhabar.com/category/business/feed"				},
+                              {
+                              "title":"खेलकुद",
+                              "links":"http://www.onlinekhabar.com/category/sports/feed"				},
+                              {
+                              "title":"प्रवास",
+                              "links":"http://www.onlinekhabar.com/category/prabas-news/feed"				},
+                              {
+                              "title":"विचित्र संसार",
+                              "links":"http://www.onlinekhabar.com/category/bichitra-world/feed"				},
+                              {
+                              "title":"सूचना प्रबिधि",
+                              "links":"http://www.onlinekhabar.com/category/technology/feed"				},
+                              {
+                              "title":"साहित्य",
+                              "links":"http://www.onlinekhabar.com/category/literature/feed"
+                              }]
+                  },
+                  {
+                  "id": "17",
+                  "title":"hamraKura",
+                  "mainLink":"http://www.hamrakura.com/home-page/feed",
+                  "language":"nepali",
+                  "imageName":"hamraKura_nep.png",
+                  "labelName":"HAMRA KURA",
+                  "category":[
+                              {
+                              "title":"गृहपृष्ठ",
+                              "links":"http://www.hamrakura.com/home-page/feed"				},
+                              {
+                              "title":"समसामयिक कुरा",
+                              "links":"http://www.hamrakura.com/category/current-affairs/feed"				},
+                              {
+                              "title":"बिशेष कुरा",
+                              "links":"http://www.hamrakura.com/category/hamrakura-exclusive/feed"				},
+                              {
+                              "title":"मनोरन्जनका कुरा",
+                              "links":"http://www.hamrakura.com/category/%e0%a4%ae%e0%a4%a8%e0%a5%8b%e0%a4%b0%e0%a4%a8%e0%a5%8d%e0%a4%9c%e0%a4%a8/feed"				},
+                              {
+                              "title":"अर्थका कुरा",
+                              "links":"http://www.hamrakura.com/category/finance/feed"				},
+                              {
+                              "title":"प्रबिधिका कुरा",
+                              "links": "http://www.hamrakura.com/category/it/feed"				},
+                              {
+                              "title":"पर्यटनका कुरा",
+                              "links":"http://www.hamrakura.com/category/tourism/feed"				},
+                              {
+                              "title":"खेलकुदका कुरा",
+                              "links":"http://www.hamrakura.com/category/sports/feed"				},
+                              {
+                              "title":"प्रवासका कुरा",
+                              "links":"http://www.hamrakura.com/category/prawas/feed"				},
+                              {
+                              "title":"विविध कुरा",
+                              "links":"http://www.hamrakura.com/category/misc/feed"
+                              }]
+                  
+                  
+                  },
+                  {
+                  "id": "18",
+                  "title":"karobarDaily",
+                  "mainLink":"http://karobardaily.com/blog/rss/all.rss",
+                  "language":"nepali",
+                  "imageName":"karobar_nep.png",
+                  "labelName":"KAROBAR",
+                  "category":[
+                              {
+                              "title":"गृहपृष्ठ",
+                              "links":"http://karobardaily.com/blog/rss/all.rss"				},
+                              {
+                              "title":"प्रमुख समाचार",
+                              "links":"http://karobardaily.com/blog/rss/%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AE%E0%A5%81%E0%A4%96-%E0%A4%B8%E0%A4%AE%E0%A4%BE%E0%A4%9A%E0%A4%BE%E0%A4%B0.rss"				},
+                              {
+                              "title":"देश",
+                              "links":"http://karobardaily.com/blog/rss/%E0%A4%A6%E0%A5%87%E0%A4%B6.rss"				},
+                              {
+                              "title":"अर्थ",
+                              "links":"http://karobardaily.com/blog/rss/%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%A5.rss"				},
+                              {
+                              "title":"बैंक तथा बित्त",
+                              "links":"http://karobardaily.com/blog/rss/%E0%A4%AC%E0%A5%88%E0%A4%82%E0%A4%95-%E0%A4%A4%E0%A4%A5%E0%A4%BE-%E0%A4%AC%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%A4.rss"				},
+                              {
+                              "title":"कर्पोरेट",
+                              "links":"http://karobardaily.com/blog/rss/%E0%A4%95%E0%A4%B0%E0%A5%8D%E0%A4%AA%E0%A5%8B%E0%A4%B0%E0%A5%87%E0%A4%9F.rss"				},
+                              {
+                              "title":"राजनीति/समाज",
+                              "links":"http://karobardaily.com/blog/rss/%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A4%A8%E0%A5%80%E0%A4%A4%E0%A4%BF-%E0%A4%B8%E0%A4%AE%E0%A4%BE%E0%A4%9C.rss"
+                              },
+                              {
+                              "title":"सूचना–प्रविधि",
+                              "links":"http://karobardaily.com/blog/rss/%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A4%A8%E0%A4%BE%E2%80%93%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B5%E0%A4%BF%E0%A4%A7%E0%A4%BF.rss"				},
+                              {
+                              "title":"रोजगार",
+                              "links":"http://karobardaily.com/blog/rss/%E0%A4%B0%E0%A5%8B%E0%A4%9C%E0%A4%97%E0%A4%BE%E0%A4%B0.rss"				},
+                              {
+                              "title":"अर्थरंग",
+                              "links":"http://karobardaily.com/blog/rss/%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%B0%E0%A4%82%E0%A4%97.rss"				}]
+                  }
+                  
+                  
+                  ]
+}
+

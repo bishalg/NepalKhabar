@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ITV-ke-G3h">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--News Categories List-->
+        <scene sceneID="qg9-gJ-TNF">
+            <objects>
+                <viewController storyboardIdentifier="NKNewsCategoriesList" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e2U-Hu-0wY" customClass="NKNewsCategoriesList" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="luq-AJ-fGF">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_pattern.png" id="dUS-Tr-pWG">
+                                <rect key="frame" x="0.0" y="41" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KX2-9S-TnV">
+                                <rect key="frame" x="0.0" y="54" width="320" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="40" sectionHeaderHeight="22" sectionFooterHeight="22" id="wBo-DE-Sf1">
+                                <rect key="frame" x="0.0" y="85" width="320" height="375"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell tag="10" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="cell" rowHeight="50" id="baI-9y-6ob">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="2000" contentMode="scaleToFill" id="ts0-Rt-C0c">
+                                                    <rect key="frame" x="52" y="12" width="25" height="25"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1000" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ai1-6i-Fdb">
+                                                    <rect key="frame" x="97" y="8" width="203" height="33"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="e2U-Hu-0wY" id="QfO-z7-0ZF"/>
+                                    <outlet property="delegate" destination="e2U-Hu-0wY" id="TA6-Fb-xhF"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <connections>
+                        <outlet property="lblCategoryName" destination="KX2-9S-TnV" id="qdT-0a-02N"/>
+                        <outlet property="tableView" destination="wBo-DE-Sf1" id="Mse-1v-TKq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3R1-B2-zdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1751" y="-795"/>
+        </scene>
+        <!--News ListingTVC-->
+        <scene sceneID="k9Y-yU-kua">
+            <objects>
+                <viewController storyboardIdentifier="NKNewsListingTVC" id="gDg-og-6ZA" customClass="NKNewsListingTVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BaA-t5-DbM">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="115" sectionHeaderHeight="22" sectionFooterHeight="22" id="W7h-qF-IKE">
+                                <rect key="frame" x="0.0" y="54" width="320" height="406"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="OddCell" rowHeight="100" id="Gub-VE-wCF">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="top" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" id="SAx-uL-ZrK" userLabel="lbl - News Title">
+                                                    <rect key="frame" x="20" y="2" width="289" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="102" contentMode="left" text="News Detail" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bRo-Nz-vCQ">
+                                                    <rect key="frame" x="20" y="41" width="289" height="37"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                                    <color key="textColor" red="0.50813094430000005" green="0.50813094430000005" blue="0.50813094430000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="103" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RpT-zf-7v6" userLabel="lblDate">
+                                                    <rect key="frame" x="141" y="75" width="150" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" red="0.50813094430000005" green="0.50813094430000005" blue="0.50813094430000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="gDg-og-6ZA" id="8nw-bx-0WR"/>
+                                    <outlet property="delegate" destination="gDg-og-6ZA" id="uzx-go-KFm"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" id="LVL-Mr-Pw8" userLabel="titleBar">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="title_bg.png" id="yG2-hY-6bo">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sBm-d2-sso">
+                                        <rect key="frame" x="280" y="5" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title=" " image="sandwich_bright@2x.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnCategories:" destination="gDg-og-6ZA" eventType="touchUpInside" id="g6X-iP-L65"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Btz-Qq-LO4">
+                                        <rect key="frame" x="0.0" y="2" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title=" " image="back_bright.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnBackToHome:" destination="gDg-og-6ZA" eventType="touchUpInside" id="hJS-Oy-iYj"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dmc-oZ-XJc">
+                                        <rect key="frame" x="33" y="11" width="246" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="actionbar@2x.png" id="8rY-7r-V5J">
+                                        <rect key="frame" x="15" y="45" width="290" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="none" adjustsFontSizeToFit="NO" id="iKF-Si-GIh">
+                                        <rect key="frame" x="0.0" y="39" width="320" height="13"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblCategoryName" destination="iKF-Si-GIh" id="aC0-0Y-XfF"/>
+                        <outlet property="lblNewsPaperName" destination="Dmc-oZ-XJc" id="ebc-TB-fzb"/>
+                        <outlet property="tableView" destination="W7h-qF-IKE" id="IbK-0C-WUG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O0j-Bc-vKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="906" y="-146"/>
+        </scene>
+        <!--Initial View Controller-->
+        <scene sceneID="A7Q-CK-Sxh">
+            <objects>
+                <viewController storyboardIdentifier="InitialViewController" id="VPx-Ak-DzA" customClass="InitialViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M0P-ak-XHI">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="C1H-eX-4bZ" customClass="NKSlideView">
+                                <rect key="frame" x="0.0" y="152" width="320" height="137"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dmq-4m-knB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="865" y="-772"/>
+        </scene>
+        <!--News Details - NKNewsDetails-->
+        <scene sceneID="MxW-em-VyZ">
+            <objects>
+                <viewController storyboardIdentifier="NKNewsDetails" title="NKNewsDetails" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4Vw-y7-pHv" customClass="NKNewsDetails" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LFB-hq-zJ6">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="F2c-Hq-cVK" userLabel="titleView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="title_bg.png" id="mkk-Ni-Kbh">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HB9-f6-cv8">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title=" " image="back_bright.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnClose:" destination="4Vw-y7-pHv" eventType="touchUpInside" id="77c-0c-Dkq"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HQX-Bu-VKr">
+                                        <rect key="frame" x="41" y="13" width="223" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="JSz-bH-KUF">
+                                <rect key="frame" x="0.0" y="44" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="pQX-qa-Wcb">
+                                <rect key="frame" x="7" y="52" width="307" height="421"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium " id="2wt-Dc-FoK">
+                                        <rect key="frame" x="13" y="74" width="280" height="327"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D5h-QQ-wXX">
+                                        <rect key="frame" x="28" y="48" width="251" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" id="2rd-7Z-VqD">
+                                        <rect key="frame" x="13" y="1" width="280" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Title
+Title</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <webView opaque="NO" contentMode="scaleToFill" id="Q3G-Ak-3Is">
+                                <rect key="frame" x="7" y="45" width="307" height="408"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" id="dAA-0J-rgv">
+                                <rect key="frame" x="0.0" y="419" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="XNZ-Ef-Z47" customClass="ViewBottomBar">
+                                <rect key="frame" x="0.0" y="419" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="Vdq-Z1-7iA" customClass="NKSlideView">
+                                <rect key="frame" x="0.0" y="378" width="320" height="35"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.83052007299999997" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KbR-wB-hdf"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="btnBack" destination="HB9-f6-cv8" id="27U-NF-SjN"/>
+                        <outlet property="imgTitleBar" destination="mkk-Ni-Kbh" id="Npi-ie-Uzb"/>
+                        <outlet property="lblNewsPaperName" destination="HQX-Bu-VKr" id="eVu-2H-ibI"/>
+                        <outlet property="lblPublishDate" destination="D5h-QQ-wXX" id="8As-IK-Qg7"/>
+                        <outlet property="lblTitle" destination="2rd-7Z-VqD" id="zHr-iq-kGE"/>
+                        <outlet property="slideView" destination="Vdq-Z1-7iA" id="br1-un-9je"/>
+                        <outlet property="tabBtmView" destination="XNZ-Ef-Z47" id="gm0-Mf-nxP"/>
+                        <outlet property="tempNewsView" destination="pQX-qa-Wcb" id="LU5-mO-xsg"/>
+                        <outlet property="titleView" destination="F2c-Hq-cVK" id="geM-Dz-T3C"/>
+                        <outlet property="txtDescription" destination="2wt-Dc-FoK" id="nb1-hD-com"/>
+                        <outlet property="viewBottomBackground" destination="dAA-0J-rgv" id="kZU-EQ-ic1"/>
+                        <outlet property="webViewTextDescription" destination="Q3G-Ak-3Is" id="7fd-Zz-Dbz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zVJ-GY-N7c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1984" y="-146"/>
+        </scene>
+        <!--Web ViewVC-->
+        <scene sceneID="KZK-rI-cpQ">
+            <objects>
+                <viewController storyboardIdentifier="NKWebViewVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PsG-G8-oXV" customClass="NKWebViewVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vx8-97-R5I">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" id="LXa-3X-CQv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="r40-fZ-86A">
+                                <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Open in Safari" id="xSM-MD-cSJ">
+                                        <connections>
+                                            <action selector="openSafari:" destination="PsG-G8-oXV" id="Jp8-VV-EJl"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="0.60392159223556519" green="0.80392163991928101" blue="0.38039219379425049" alpha="1" colorSpace="deviceRGB"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <connections>
+                        <outlet property="webView" destination="LXa-3X-CQv" id="M2i-VR-FCD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MLx-4Z-ejC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2407" y="-146"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="tCN-TQ-xjR">
+            <objects>
+                <viewController storyboardIdentifier="nkHomeVC" id="dRq-Dj-fPl" customClass="NKHomeVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vAH-BR-Cq8">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="Lw7-To-sc7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="z6R-ha-dCz">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="weather_overlay.png" id="qkV-no-OMU">
+                                        <rect key="frame" x="20" y="10" width="278" height="390"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="taC-sx-rUV">
+                                <rect key="frame" x="20" y="10" width="278" height="390"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="J76-hY-QhW" userLabel="lblDay">
+                                        <rect key="frame" x="101" y="174" width="75" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="35"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="IAn-1B-xpq" userLabel="viewSunRiseSunSet">
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="173"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="sunrise@2x.png" id="K1j-JJ-EsZ">
+                                                <rect key="frame" x="28" y="149" width="22" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RAJ-Qm-tIk" userLabel="lblSunrise">
+                                                <rect key="frame" x="55" y="145" width="71" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eJe-Na-CF5" userLabel="lblSunset">
+                                                <rect key="frame" x="183" y="145" width="80" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="sunset@2x.png" id="kYh-uB-jyB">
+                                                <rect key="frame" x="158" y="149" width="22" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WC4-rP-tbg" userLabel="lblDate">
+                                        <rect key="frame" x="89" y="212" width="141" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="27"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="Hs3-tN-RlM" userLabel="viewWeather">
+                                        <rect key="frame" x="-21" y="120" width="320" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="sunnyday.png" id="Uri-Sm-QcM" userLabel="imgWeather">
+                                                <rect key="frame" x="80" y="33" width="88" height="71"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WxR-N2-QgM" userLabel="lblTemp">
+                                                <rect key="frame" x="137" y="58" width="143" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="22"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dii-fc-MZh" userLabel="lblTemprNow">
+                                                <rect key="frame" x="182" y="86" width="94" height="77"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="50"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="काठमाडौं" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C4D-HG-8mU">
+                                                <rect key="frame" x="36" y="96" width="119" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VGa-wE-k0d" userLabel="lblWeatherTitle">
+                                                <rect key="frame" x="20" y="20" width="42" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="vJ0-NJ-XDm" userLabel="NewsSectionView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="512"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="title_bg@2x.png" id="iur-JN-cgR">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="We1-O9-zXT">
+                                        <rect key="frame" x="0.0" y="42" width="320" height="512"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="8MF-Tf-aux" userLabel="NewsTitleView">
+                                        <rect key="frame" x="0.0" y="9" width="322" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="NepalKhabar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xy4-6L-HjB">
+                                                <rect key="frame" x="0.0" y="2" width="322" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="btn_down.png" id="5bc-z1-Ss9">
+                                                <rect key="frame" x="277" y="5" width="26" height="26"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="language_selector_bg@2x.png" id="xys-eT-6AQ">
+                                        <rect key="frame" x="30" y="55" width="256" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
+                                    </imageView>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="WLs-di-9Ks" customClass="SDSegmentedControl">
+                                        <rect key="frame" x="30" y="56" width="256" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <segments>
+                                            <segment title="नेपाली"/>
+                                            <segment title="English"/>
+                                        </segments>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="segmentChanged:" destination="dRq-Dj-fPl" eventType="valueChanged" id="QUx-9l-LS5"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" id="1Jc-e4-ESZ">
+                                        <rect key="frame" x="0.0" y="110" width="320" height="354"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="dRq-Dj-fPl" id="ude-uY-paW"/>
+                                        </connections>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vov-7t-9eS"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="coverImage" destination="z6R-ha-dCz" id="AHM-Yh-Fat"/>
+                        <outlet property="dateLbl" destination="WC4-rP-tbg" id="x24-UP-zag"/>
+                        <outlet property="imgArrow" destination="5bc-z1-Ss9" id="hTe-BD-YXQ"/>
+                        <outlet property="imgNewsBG" destination="We1-O9-zXT" id="IC9-zF-F6h"/>
+                        <outlet property="imgWeather" destination="Uri-Sm-QcM" id="RN0-9K-5UZ"/>
+                        <outlet property="lblLocation" destination="C4D-HG-8mU" id="7ED-a7-E9H"/>
+                        <outlet property="lblSunRise" destination="RAJ-Qm-tIk" id="sFo-AS-w6u"/>
+                        <outlet property="lblSunSet" destination="eJe-Na-CF5" id="yzR-cQ-m8W"/>
+                        <outlet property="lblTempr" destination="dii-fc-MZh" id="u26-oZ-XRc"/>
+                        <outlet property="lblTemprHighLow" destination="WxR-N2-QgM" id="rEW-cI-ST8"/>
+                        <outlet property="lblWeatherTitle" destination="VGa-wE-k0d" id="cvT-ZY-g4p"/>
+                        <outlet property="nepalKhabarLabel" destination="Xy4-6L-HjB" id="Ti4-zw-SM0"/>
+                        <outlet property="newsScrollView" destination="1Jc-e4-ESZ" id="lws-VA-84G"/>
+                        <outlet property="segmentCategory" destination="WLs-di-9Ks" id="2QK-qr-aDm"/>
+                        <outlet property="viewImageHolder" destination="Lw7-To-sc7" id="dnI-fN-rnf"/>
+                        <outlet property="viewNewsSection" destination="vJ0-NJ-XDm" id="rXF-tb-Q9i"/>
+                        <outlet property="viewNewsTitle" destination="8MF-Tf-aux" id="VOQ-na-nBf"/>
+                        <outlet property="viewSunRiseSunSet" destination="IAn-1B-xpq" id="arl-Im-0Vt"/>
+                        <outlet property="weekDaysLbl" destination="J76-hY-QhW" id="cIo-7H-CCP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lHy-Ic-4Wb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="460" y="-146"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ufb-k3-wlI">
+            <objects>
+                <navigationController id="ITV-ke-G3h" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iiA-rh-DdU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dRq-Dj-fPl" kind="relationship" relationship="rootViewController" id="5SF-dN-6Wq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ca8-Ts-NZY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-64" y="-146"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uCL-jQ-XHp">
+            <objects>
+                <navigationController id="cTF-DQ-dEk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sh4-0H-TTn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4Vw-y7-pHv" kind="relationship" relationship="rootViewController" id="kxt-oX-X7P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="psN-F7-kV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1566" y="-153"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="actionbar@2x.png" width="580" height="4"/>
+        <image name="back_bright.png" width="44" height="44"/>
+        <image name="bg_pattern.png" width="316" height="86"/>
+        <image name="btn_down.png" width="44" height="44"/>
+        <image name="language_selector_bg@2x.png" width="585" height="91"/>
+        <image name="sandwich_bright@2x.png" width="88" height="88"/>
+        <image name="sunnyday.png" width="81" height="81"/>
+        <image name="sunrise@2x.png" width="44" height="44"/>
+        <image name="sunset@2x.png" width="44" height="44"/>
+        <image name="title_bg.png" width="320" height="45"/>
+        <image name="title_bg@2x.png" width="640" height="90"/>
+        <image name="weather_overlay.png" width="556" height="888"/>
+    </resources>
+    <classes>
+        <class className="ECSlidingViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ECSlidingViewController.h"/>
+        </class>
+        <class className="IIViewDeckController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IIViewDeckController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bottomController" candidateClass="UIViewController"/>
+                <relationship kind="outlet" name="centerController" candidateClass="UIViewController"/>
+                <relationship kind="outlet" name="leftController" candidateClass="UIViewController"/>
+                <relationship kind="outlet" name="panningView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="rightController" candidateClass="UIViewController"/>
+                <relationship kind="outlet" name="topController" candidateClass="UIViewController"/>
+            </relationships>
+        </class>
+        <class className="InitialViewController" superclassName="IIViewDeckController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InitialViewController.h"/>
+        </class>
+        <class className="NKHomeVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NKHomeVC.h"/>
+            <relationships>
+                <relationship kind="outlet" name="coverImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="dateLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="imgArrow" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="imgNewsBG" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="imgWeather" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="lblLocation" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblSunRise" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblSunSet" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblTempr" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblTemprHighLow" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblWeatherTitle" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="nepalKhabarLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="newsScrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="segmentCategory" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="viewImageHolder" candidateClass="UIView"/>
+                <relationship kind="outlet" name="viewNewsSection" candidateClass="UIView"/>
+                <relationship kind="outlet" name="viewNewsTitle" candidateClass="UIView"/>
+                <relationship kind="outlet" name="viewSunRiseSunSet" candidateClass="UIView"/>
+                <relationship kind="outlet" name="weekDaysLbl" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NKNewsCategoriesList" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NKNewsCategoriesList.h"/>
+            <relationships>
+                <relationship kind="outlet" name="lblCategoryName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="NKNewsDetails" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NKNewsDetails.h"/>
+            <relationships>
+                <relationship kind="outlet" name="backView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="btnBack" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="imgTitleBar" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="lblNewsPaperName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblPublishDate" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblTitle" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="progressView" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="slideView" candidateClass="NKSlideView"/>
+                <relationship kind="outlet" name="tabBtmView" candidateClass="ViewBottomBar"/>
+                <relationship kind="outlet" name="tempNewsView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="titleView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="txtDescription" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="viewBottomBackground" candidateClass="UIView"/>
+                <relationship kind="outlet" name="webViewTextDescription" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="NKNewsListingTVC" superclassName="ECSlidingViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NKNewsListingTVC.h"/>
+            <relationships>
+                <relationship kind="outlet" name="lblCategory" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblCategoryName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblNewsPaperName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="rssParser" candidateClass="NKRSSParser"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="viewCategoryName" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="NKRSSParser" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NKRSSParser.h"/>
+        </class>
+        <class className="NKSlideView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NKSlideView.h"/>
+        </class>
+        <class className="NKWebViewVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NKWebViewVC.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="SDSegmentedControl" superclassName="UISegmentedControl">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SDSegmentedControl.h"/>
+        </class>
+        <class className="ViewBottomBar" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewBottomBar.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

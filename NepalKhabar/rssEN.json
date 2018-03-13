@@ -1,0 +1,223 @@
+{
+    "totalPages": 1,
+    "newspaper": [
+                  {
+                  "id": "01",
+                  "title": "ekantipur",
+                  "mainLink": "http://ekantipur.com/en/rss/",
+                  "language": "english",
+                  "imageName": "theKathmanduPost_eng.png",
+                  "labelName": "eKantipur",
+                  "rssType": "normal",
+                  "xpath":"main_wrapper_left",
+                  "xpathName":"class",
+                  "category": [
+                               {
+                               "title": "Home",
+                               "links": "http://ekantipur.com/en/rss/"
+                               },
+                               {
+                               "title": "Top Stories",
+                               "links": "http://www.ekantipur.com/en/rss/1"
+                               },
+                               {
+                               "title": "National",
+                               "links": "http://www.ekantipur.com/en/rss/a/1"
+                               },
+                               {
+                               "title": "Business",
+                               "links": "http://www.ekantipur.com/en/rss/a/3"
+                               },
+                               {
+                               "title": "Sports",
+                               "links": "http://www.ekantipur.com/en/rss/a/4"
+                               },
+                               {
+                               "title": "World",
+                               "links": "http://www.ekantipur.com/en/rss/world/5"
+                               },
+                               {
+                               "title": "Entertainment",
+                               "links": "http://www.ekantipur.com/en/rss/a/6"
+                               },
+                               {
+                               "title": "Editor Pickup",
+                               "links": "http://www.ekantipur.com/en/rss/editors-pick/10"
+                               }
+                               ]
+                  },
+                                     {
+                  "id": "03",
+                  "title": "myrepublica",
+                  "mainLink": "http://www.myrepublica.com/portal/rss.php",
+                  "language": "english",
+                  "imageName": "republica_eng.png",
+                  "rssType": "type1",
+                  "labelName": "Republica",
+                  "xpath":"null",
+                  "xpathName":"null",
+                  "category": [
+                               {
+                               "title": "Home",
+                               "links": "http://www.myrepublica.com/portal/rss.php"
+                               },
+                               {
+                               "title": "Political Affairs",
+                               "links": "http://www.myrepublica.com/portal/news_rss.php?news_category_id=14"
+                               },
+                               {
+                               "title": "Business And Economy",
+                               "links": "http://www.myrepublica.com/portal/news_rss.php?news_category_id=15"
+                               },
+                               {
+                               "title": "social Affairs",
+                               "links": "http://www.myrepublica.com/portal/news_rss.php?news_category_id=16"
+                               },
+                               {
+                               "title": "Life Style",
+                               "links": "http://www.myrepublica.com/portal/news_rss.php?news_category_id=17"
+                               },
+                               {
+                               "title": "Sports",
+                               "links": "http://www.myrepublica.com/portal/news_rss.php?news_category_id=18"
+                               },
+                               {
+                               "title": "Opinion",
+                               "links": "http://www.myrepublica.com/portal/news_rss.php?news_category_id=19"
+                               },
+                               {
+                               "title": "Interview",
+                               "links": "http://www.myrepublica.com/portal/news_rss.php?news_category_id=23"
+                               },
+                               {
+                               "title": "International",
+                               "links": "http://www.myrepublica.com/portal/news_rss.php?news_category_id=21"
+                               }
+                               ]
+                  },
+                  {
+                  "id": "04",
+                  "title": "nepaliTimes",
+                  "mainLink": "http://www.nepalitimes.com/blogs/thebrief/feed/",
+                  "language": "english",
+                  "imageName": "nepaliTimes_eng.png",
+                  "labelName": "Nepali Times",
+                  "rssType": "normal",
+                  "xpathName":"class",
+                  "xpath":"entry",
+                  "category": [
+                               {
+                               "title": "Home",
+                               "links": "http://www.nepalitimes.com/blogs/thebrief/feed/"
+                               }
+                               ]
+                  },
+                {
+                  "id": "06",
+                  "title": "telegraphNepal",
+                  "mainLink": "http://www.telegraphnepal.com/rssFeed-2",
+                  "language": "english",
+                  "imageName": "telegraphnepal_eng.png",
+                  "rssType": "normal",
+                  "labelName": "Telegraphnepal",
+                  "xpath":"MainContentInnerLayout",
+                  "xpathName":"class",
+                  "category": [
+                               {
+                               "title": "National",
+                               "links": "http://www.telegraphnepal.com/rssFeed-2"
+                               },
+                               {
+                               "title": "Views",
+                               "links": "http://www.telegraphnepal.com/rssFeed-5"
+                               },
+                               {
+                               "title": "Editorials",
+                               "links": "http://www.telegraphnepal.com/rssFeed-4"
+                               },
+                               {
+                               "title": "International",
+                               "links": "http://www.telegraphnepal.com/rssFeed-6"
+                               },
+                               {
+                               "title": "Featured",
+                               "links": "http://www.telegraphnepal.com/rssFeed-23"
+                               },
+                               {
+                               "title": "Corruption",
+                               "links": "http://www.telegraphnepal.com/rssFeed-10"
+                               },
+                               {
+                               "title": "Dossier",
+                               "links": "http://www.telegraphnepal.com/rssFeed-15"
+                               },
+                               {
+                               "title": "Opinion",
+                               "links": "http://www.telegraphnepal.com/rssFeed-8"
+                               },
+                               {
+                               "title": "Analysis",
+                               "links": "http://www.telegraphnepal.com/rssFeed-14"
+                               }
+                               ]
+                  },
+                  {
+                  "id": "07",
+                  "title": "ehamrakura",
+                  "mainLink": "http://ehamrakura.com/category/current-affairs/feed",
+                  "language": "english",
+                  "imageName": "hamrakura_eng.png",
+                  "rssType": "normal",
+                  "labelName": "HamraKura",
+                  "xpathName":"class",
+                  "xpath":"article",
+                  "category": [
+                               {
+                               "title": "Home",
+                               "links": "http://ehamrakura.com/home/feed"
+                               },
+                               {
+                               "title": "Current Affairs",
+                               "links": "http://ehamrakura.com/category/current-affairs/feed"
+                               },
+                               {
+                               "title": "Opinion",
+                               "links": "http://ehamrakura.com/category/opinion/feed"
+                               },
+                               {
+                               "title": "International",
+                               "links": "http://ehamrakura.com/category/international/feed"
+                               },
+                               {
+                               "title": "sports",
+                               "links": "http://ehamrakura.com/category/sports/feed"
+                               },
+                               {
+                               "title": "Economy And Tourism",
+                               "links": "http://ehamrakura.com/category/economy-tourism/feed"
+                               },
+                               {
+                               "title": "Entertainment",
+                               "links": "http://ehamrakura.com/category/entertainment/feed"
+                               }
+                               ]
+                  },
+                  {
+                  "id": "08",
+                  "title": "onlineKhabar",
+                  "mainLink": "http://www.onlinekhabar.com/category/english/news-headlines/feed",
+                  "rssType": "normal",
+                  "language": "english",
+                  "imageName": "onlineKhabar_eng.png",
+                  "labelName": "Online Khabar",
+                  "xpathName":"id",
+                  "xpath":"sing_left",
+                  "category": [
+                               {
+                               "title": "Home",
+                               "links": "http://www.onlinekhabar.com/category/english/news-headlines/feed"
+                               }
+                               ]
+                  },
+            ]
+}

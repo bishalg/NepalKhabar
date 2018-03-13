@@ -1,0 +1,259 @@
+{
+    "totalPages": 1,
+    "newspaper": [
+                {
+                  "id": "10",
+                  "title": "ekantipur",
+                  "mainLink": "http://ekantipur.com/np/rss/",
+                  "language": "nepali",
+                  "imageName": "kantipur_nep.png",
+                  "labelName": "कान्तिपुर",
+                  "rssType": "normal",
+                  "xpathName":"class",
+                  "xpath":"newsContentWrapper",
+                  "category": [
+                               {
+                               "title": "मुख्य समाचार",
+                               "links": "http://ekantipur.com/np/rss/"
+                               },
+                               {
+                               "title": "अर्थ",
+                               "links": "http://www.ekantipur.com/np/rss/2/"
+                               },
+                               {
+                               "title": "खेलकुद",
+                               "links": "http://www.ekantipur.com/np/rss/3/"
+                               },
+                               {
+                               "title": "मनोरंजन",
+                               "links": "http://www.ekantipur.com/np/rss/4/"
+                               },
+                               {
+                               "title": "बिचार",
+                               "links": "http://www.ekantipur.com/np/rss/5/"
+                               },
+                               {
+                               "title": "कुराकानी",
+                               "links": "http://www.ekantipur.com/np/rss/6/"
+                               },
+                               {
+                               "title": "समाचार",
+                               "links": "http://www.ekantipur.com/np/rss/10/"
+                               },
+                               {
+                               "title": "सम्पादकीय",
+                               "links": "http://www.ekantipur.com/np/rss/12/"
+                               },
+                               {
+                               "title": "चौतारी",
+                               "links": "http://www.ekantipur.com/np/rss/18/"
+                               },
+                               {
+                               "title": "सूचना प्रविधि",
+                               "links": "http://www.ekantipur.com/np/rss/20/"
+                               },
+                               {
+                               "title": "स्वास्थ्य",
+                               "links": "http://www.ekantipur.com/np/rss/21/"
+                               },
+                               {
+                               "title": "विश्व",
+                               "links": " http://www.ekantipur.com/np/rss/27/"
+                               }
+                               ]
+                  },
+                {
+                  "id": "13",
+                  "title": "himalKhabar",
+                  "mainLink": "http://www.himalkhabar.com/?feed=rss2",
+                  "rssType": "normal",
+                  "language": "nepali",
+                  "imageName": "himalKhabar_nep.png",
+                  "labelName": "हिमाल खबर",
+                  "xpathName":"class",
+                  "xpath":"post_content",
+                  "category": [
+                               {
+                               "title": "मुख्य समाचार",
+                               "links": " http://www.himalkhabar.com/?feed=rss2"
+                               },
+                               {
+                               "title": "समाचार",
+                               "links": " http://www.himalkhabar.com/?feed=rss2&cat=1"
+                               },
+                               {
+                               "title": "रिपोर्ट",
+                               "links": "http://www.himalkhabar.com/?feed=rss2&cat=306"
+                               },
+                               {
+                               "title": "टिप्पणी",
+                               "links": "http://www.himalkhabar.com/?feed=rss2&cat=4"
+                               },
+                               {
+                               "title": "अन्तर्वार्ता -विचार",
+                               "links": "http://www.himalkhabar.com/?feed=rss2&cat=5"
+                               },
+                               {
+                               "title": "रमझम",
+                               "links": "http://www.himalkhabar.com/?feed=rss2&cat=9"
+                               },
+                               {
+                               "title": "खेलकुद",
+                               "links": "http://www.himalkhabar.com/?feed=rss2&cat=316"
+                               },
+                               {
+                               "title": "अर्थ",
+                               "links": "http://www.himalkhabar.com/?feed=rss2&cat=10"
+                               },
+                               {
+                               "title": "व्यक्तित्व",
+                               "links": "http://www.himalkhabar.com/?feed=rss2&cat=312"
+                               },
+                               {
+                               "title": "दस्तावेज",
+                               "links": "http://www.himalkhabar.com/?feed=rss2&cat=307"
+                               },
+                               {
+                               "title": "ब्लग",
+                               "links": "http://www.himalkhabar.com/?feed=rss2&cat=305"
+                               }
+                               ]
+                  },
+                  {
+                  "id": "14",
+                  "title": "mysansar",
+                  "mainLink": "http://www.mysansar.com/feed/",
+                  "rssType": "normal",
+                  "language": "nepali",
+                  "imageName": "mysansar_nep.png",
+                  "labelName": "माइ संसार",
+                  "xpathName":"class",
+                  "xpath":"post-bodycopy clearfix",
+                  "category": [
+                               {
+                               "title": "मुख्य समाचार",
+                               "links": "http://www.mysansar.com/feed/"
+                               }
+                               ]
+                  },
+                  {
+                  "id": "15",
+                  "title": "imageChannel",
+                  "mainLink": "http://feeds.feedburner.com/ImageChannel?format=xml",
+                  "rssType": "normal",
+                  "language": "nepali",
+                  "imageName": "imageChannel_nep.png",
+                  "labelName": "इमेज च्यानल",
+                  "xpathName":"id",
+                  "xpath":"details",
+                  "category": [
+                               {
+                               "title": "मुख्य समाचार",
+                               "links": "http://feeds.feedburner.com/ImageChannel?format=xml"
+                               }
+                               ]
+                  },
+                  {
+                  "id": "16",
+                  "title": "onlineKhabar",
+                  "mainLink": "http://www.onlinekhabar.com/feed",
+                  "rssType": "normal",
+                  "language": "nepali",
+                  "imageName": "onlineKhabar_nep.png",
+                  "labelName": "अन्लाईन खबर",
+                  "xpathName":"id",
+                  "xpath":"sing_cont",
+                  "category": [
+                               {
+                               "title": "मुख्य समाचार",
+                               "links": "http://www.onlinekhabar.com/feed"
+                               },
+                               {
+                               "title": "समाचार",
+                               "links": " http://www.onlinekhabar.com/category/%E0%A4%B8%E0%A4%AE%E0%A4%BE%E0%A4%9A%E0%A4%BE%E0%A4%B0/feed"
+                               },
+                               {
+                               "title": "बिचार",
+                               "links": "http://www.onlinekhabar.com/category/opinion/feed"
+                               },
+                               {
+                               "title": "विजनेश",
+                               "links": "http://www.onlinekhabar.com/category/business/feed"
+                               },
+                               {
+                               "title": "खेलकुद",
+                               "links": "http://www.onlinekhabar.com/category/sports/feed"
+                               },
+                               {
+                               "title": "प्रवास",
+                               "links": "http://www.onlinekhabar.com/category/prabas-news/feed"
+                               },
+                               {
+                               "title": "विचित्र संसार",
+                               "links": "http://www.onlinekhabar.com/category/bichitra-world/feed"
+                               },
+                               {
+                               "title": "सूचना प्रविधि",
+                               "links": "http://www.onlinekhabar.com/category/technology/feed"
+                               },
+                               {
+                               "title": "साहित्य",
+                               "links": "http://www.onlinekhabar.com/category/literature/feed"
+                               }
+                               ]
+                  },
+                  {
+                  "id": "17",
+                  "title": "hamraKura",
+                  "mainLink": "http://www.hamrakura.com/category/current-affairs/feed",
+                  "rssType": "normal",
+                  "language": "nepali",
+                  "imageName": "hamrakura_eng.png",
+                  "labelName": "हाम्रा कुरा",
+                  "xpathName":"class",
+                  "xpath":"article",
+                  "category": [
+                               {
+                               "title": "गृहपृष्ठ",
+                               "links": "http://www.hamrakura.com/home-page/feed"
+                               },
+                               {
+                               "title": "समसामयिक कुरा",
+                               "links": "http://www.hamrakura.com/category/current-affairs/feed"
+                               },
+                               {
+                               "title": "बिशेष कुरा",
+                               "links": "http://www.hamrakura.com/category/hamrakura-exclusive/feed"
+                               },
+                               {
+                               "title": "मनोरन्जनका कुरा",
+                               "links": "http://www.hamrakura.com/category/%e0%a4%ae%e0%a4%a8%e0%a5%8b%e0%a4%b0%e0%a4%a8%e0%a5%8d%e0%a4%9c%e0%a4%a8/feed"
+                               },
+                               {
+                               "title": "अर्थका कुरा",
+                               "links": "http://www.hamrakura.com/category/finance/feed"
+                               },
+                               {
+                               "title": "प्रबिधिका कुरा",
+                               "links": "http://www.hamrakura.com/category/it/feed"
+                               },
+                               {
+                               "title": "पर्यटनका कुरा",
+                               "links": "http://www.hamrakura.com/category/tourism/feed"
+                               },
+                               {
+                               "title": "खेलकुदका कुरा",
+                               "links": "http://www.hamrakura.com/category/sports/feed"
+                               },
+                               {
+                               "title": "प्रवासका कुरा",
+                               "links": "http://www.hamrakura.com/category/prawas/feed"
+                               },
+                               {
+                               "title": "विविध कुरा",
+                               "links": "http://www.hamrakura.com/category/misc/feed"
+                               }
+                               ]
+                  },
+                  ]
+}
